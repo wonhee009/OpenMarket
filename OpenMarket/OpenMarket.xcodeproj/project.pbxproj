@@ -15,6 +15,8 @@
 		26C5FE8726B905D600A80210 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26C5FE8526B905D600A80210 /* LaunchScreen.storyboard */; };
 		26C5FE9226B905D600A80210 /* OpenMarketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C5FE9126B905D600A80210 /* OpenMarketTests.swift */; };
 		26C5FE9D26B905D600A80210 /* OpenMarketUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C5FE9C26B905D600A80210 /* OpenMarketUITests.swift */; };
+		CE96E71626D8BE9500CC7E1F /* MarketItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE96E71526D8BE9500CC7E1F /* MarketItemList.swift */; };
+		CE96E71E26D8BEE200CC7E1F /* MarketItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE96E71D26D8BEE200CC7E1F /* MarketItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		26C5FE9826B905D600A80210 /* OpenMarketUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenMarketUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26C5FE9C26B905D600A80210 /* OpenMarketUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenMarketUITests.swift; sourceTree = "<group>"; };
 		26C5FE9E26B905D600A80210 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE96E71526D8BE9500CC7E1F /* MarketItemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketItemList.swift; sourceTree = "<group>"; };
+		CE96E71D26D8BEE200CC7E1F /* MarketItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		26C5FE7926B905D500A80210 /* OpenMarket */ = {
 			isa = PBXGroup;
 			children = (
+				CE96E71426D8BE8500CC7E1F /* Model */,
 				26C5FE7A26B905D500A80210 /* AppDelegate.swift */,
 				26C5FE7C26B905D500A80210 /* SceneDelegate.swift */,
 				26C5FE7E26B905D500A80210 /* ViewController.swift */,
@@ -126,6 +131,15 @@
 				26C5FE9E26B905D600A80210 /* Info.plist */,
 			);
 			path = OpenMarketUITests;
+			sourceTree = "<group>";
+		};
+		CE96E71426D8BE8500CC7E1F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE96E71526D8BE9500CC7E1F /* MarketItemList.swift */,
+				CE96E71D26D8BEE200CC7E1F /* MarketItem.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +272,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE96E71E26D8BEE200CC7E1F /* MarketItem.swift in Sources */,
 				26C5FE7F26B905D500A80210 /* ViewController.swift in Sources */,
 				26C5FE7B26B905D500A80210 /* AppDelegate.swift in Sources */,
+				CE96E71626D8BE9500CC7E1F /* MarketItemList.swift in Sources */,
 				26C5FE7D26B905D500A80210 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,8 +453,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3FKJ8N3MK7;
+				DEVELOPMENT_TEAM = 6VQP8JUW36;
 				INFOPLIST_FILE = OpenMarket/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -446,7 +463,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.yeon.OpenMarket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -456,8 +473,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3FKJ8N3MK7;
+				DEVELOPMENT_TEAM = 6VQP8JUW36;
 				INFOPLIST_FILE = OpenMarket/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -465,7 +483,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.yeon.OpenMarket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
